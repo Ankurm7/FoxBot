@@ -12,7 +12,6 @@ intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='.', intents=intents)
 bot.remove_command('help')
 
-
 # register the class with the bot
 bot.add_cog(help_cog(bot))
 bot.add_cog(music_cog(bot))
