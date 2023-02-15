@@ -2,7 +2,6 @@ import discord
 from discord.ext import commands
 from apikey import *
 
-
 # import all of the cogs
 from help_cog import help_cog
 from music_cog import music_cog
