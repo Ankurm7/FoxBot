@@ -7,14 +7,10 @@ from apikey import *
 from help_cog import help_cog
 from music_cog import music_cog
 from greetings_cog import greetings_cog
-# BOTTOKEN = botTOKEN
 
 intents = discord.Intents.all()
 bot = commands.Bot(command_prefix='.', intents=intents)
 bot.remove_command('help')
-
-# remove the default help command so that we can write out own
-# bot.remove_command('help')
 
 
 # register the class with the bot
