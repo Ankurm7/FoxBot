@@ -14,6 +14,13 @@ class greetings_cog(commands.Cog):
     async def hello(self, ctx):
         await ctx.send("Hello! I am Fox bot.")
 
+    @commands.command(name="del")
+    @commands.has_permissions(administrator=True)
+    async def delete_messages(self, ctx, l: int):
+        channel = ctx.channel
+        messages = await channel.history(limit=l).flatten()
+        await channel.delete_messages(messages)
+
     @commands.Cog.listener()
     async def on_member_join(member):
         jokeurl = "https://joke3.p.rapidapi.com/v1/joke/%7Bid%7D"

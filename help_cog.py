@@ -10,6 +10,13 @@ class help_cog(commands.Cog):
 General commands:
 .help - displays all the available commands
 .hello - Greets you
+.del <n:int> - deletes last n messages including this command.  [Only for admins]
+
+Flames:
+.flames <"name1" "name2"> - finds flames of the given names
+
+
+Music Player Commands: 
 .p <keywords> - finds the song on youtube and plays it in your current channel. Will resume playing the current song if it was paused
 .q - displays the current music queue
 .skip - skips the current song being played
