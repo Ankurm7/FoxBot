@@ -40,10 +40,3 @@ class flames_cog(commands.Cog):
     async def generate(self, ctx, name1, name2):
         word = self.generate_flames(name1, name2)
         await ctx.send("%s and %s are %s." % (name1, name2, word))
-
-    # @commands.command(name="button")
-    # async def button(self, ctx):
-    #     view = discord.ui.View()
-    #     button = discord.ui.Button(label="Click")
-    #     view.add_item(button)
-    #     await ctx.send(view=view)
